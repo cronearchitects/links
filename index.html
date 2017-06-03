@@ -42,6 +42,8 @@ var searchq=window.location.search+""
 var q=window.location.search+"=default&end" || "?noquery"
 var qt=q.split("&")[0]
 var queryx=qt.split("=")[1];
+var resource=unescape(queryx)
+document.getElementById("rx").innerHTML=resource;
 setTimeout(function(){window.location=queryx+".url"}, 3000);
 }
 </script></head>
@@ -51,9 +53,13 @@ setTimeout(function(){window.location=queryx+".url"}, 3000);
 <a href="#no_link"><div id="mainLogoDark"></div></a>
         <div id="projectsTitleHolder">
           <div id="projectsTitle">
-                <span class="menu-name2">Initialising Web Link App</span> 
+                <span class="menu-name2">Initialising Web App</span> 
           </div>
-        </div>
+        </div>   
+<br><br><br><br>
+<div id="contx" style="color:black;font-weight:none;font-size:normal;">Loading link to resource <i><span="rx"></span></i></div>       
+</div></div>
+</div>
 	
     <div id="contx" style="margin-left:auto;">&nbsp;</div>
     </div>
