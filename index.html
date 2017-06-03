@@ -42,7 +42,7 @@ var searchq=window.location.search+""
 var q=window.location.search+"=default&end" || "?noquery"
 var qt=q.split("&")[0]
 var queryx=qt.split("=")[1];
-var resource=queryx.replace(\%20\g, " ");
+var resource=unescape(queryx);
 document.getElementById("rx").innerHTML=resource;
 setTimeout(function(){window.location=queryx+".url"}, 3000);
 }
