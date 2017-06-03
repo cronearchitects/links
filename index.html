@@ -43,7 +43,7 @@ var q=window.location.search+"=default&end" || "?noquery"
 var qt=q.split("&")[0]
 var queryx=qt.split("=")[1];
 var resource=unescape(queryx);
-if (resource=="default){resource = "(not specified)"}
+if (resource=="default"){resource = "(not specified)"}
 document.getElementById("rx").innerHTML=resource;
 setTimeout(function(){window.location=queryx+".url"}, 3000);
 }
