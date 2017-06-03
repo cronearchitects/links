@@ -42,7 +42,7 @@ var searchq=window.location.search+""
 var q=window.location.search+"=default&end" || "?noquery"
 var qt=q.split("&")[0]
 var queryx=qt.split("=")[1];
-var resource=unescape(queryx)
+var resource=queryx.replace(\%20\g, " ");
 document.getElementById("rx").innerHTML=resource;
 setTimeout(function(){window.location=queryx+".url"}, 3000);
 }
@@ -54,10 +54,8 @@ setTimeout(function(){window.location=queryx+".url"}, 3000);
         <div id="projectsTitleHolder">
           <div id="projectsTitle">
                 <span class="menu-name2">Initialising Web App</span> 
-          </div>
-        </div>   
 <br><br><br><br>
-<div id="contx" style="color:black;font-weight:none;font-size:normal;">Loading link to resource <i><span="rx"></span></i></div>       
+<div id="contx" style="color:black;font-weight:none;font-size:normal;">Loading link to resource <span="rx"></span></div>       
 </div></div>
 </div>
 	
