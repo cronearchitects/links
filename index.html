@@ -50,7 +50,7 @@ var queryy=""
 var resource=unescape(queryx);
 if (resource=="default"){resource = "(not specified)"}
 document.getElementById("rx").innerHTML=resource;
-if (queryy=="z" || queryy=="url" || queryy=="link")
+if (queryy=="?z" || queryy=="?url" || queryy=="?link")
 {
 setTimeout(function(){window.location=queryx+".url"}, 3000);
 }
