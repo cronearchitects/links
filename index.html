@@ -41,10 +41,12 @@ var searchq=window.location.search+""
 
 var q=window.location.search+"=default&end" || "?noquery"
 var qt=q.split("&")[0]
-var queryy=qt.split("=")[0];
-if (queryy=="z" || queryy=="url" || queryy=="link")
 var queryx=qt.split("=")[1];
-
+var queryy=qt.split("=")[0];
+if (queryz=="default" || typeof queryy =="undefined")
+{
+var queryy=""
+}
 var resource=unescape(queryx);
 if (resource=="default"){resource = "(not specified)"}
 document.getElementById("rx").innerHTML=resource;
