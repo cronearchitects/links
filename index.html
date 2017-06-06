@@ -39,8 +39,7 @@ img.emoji {
     function load(){
 var searchq=window.location.search+""
 
-var q=window.location.search+"=default&end" || "?noquery"
-var qt=q.split("&")[0]
+var qt=window.location.search+"=default"
 var queryx=qt.split("=")[1];
 var queryy=qt.split("=")[0];
 if (queryx=="default" || typeof queryy =="undefined")
