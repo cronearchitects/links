@@ -48,6 +48,10 @@ var queryy=""
 }
 var resource=unescape(queryx);
 if (resource=="default"){resource = "(not specified)"}
+resource = resource.replace(" - ", "%DASH%")
+resource = resource.replace("EXDR_", "L:\Learning Resources\Exemplar Drawings")
+resource = resource.replace("-", " ")	    
+resource = resource.replace("%DASH%", " - )
 document.getElementById("rx").innerHTML=resource;
 if (queryy=="?z" || queryy=="?url" || queryy=="?link")
 {
